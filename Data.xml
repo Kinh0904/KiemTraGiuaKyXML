@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DanhSachNhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122128</MaNV>
+    <HoTen>Y Kinh Mlo</HoTen>
+    <BoPhan>Công nghệ thông tin</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>2004-05-12</NgaySinh>
+    <NgheNghiep>Lập trình viên</NgheNghiep>
+    <QueQuan>Đắk Lắk</QueQuan>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122129</MaNV>
+    <HoTen>Nguyễn Thị Mai</HoTen>
+    <BoPhan>Kế toán</BoPhan>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>1998-09-23</NgaySinh>
+    <NgheNghiep>Kế toán viên</NgheNghiep>
+    <QueQuan>Đà Nẵng</QueQuan>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122130</MaNV>
+    <HoTen>Trần Minh Quân</HoTen>
+    <BoPhan>Kinh doanh</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1996-03-17</NgaySinh>
+    <NgheNghiep>Nhân viên kinh doanh</NgheNghiep>
+    <QueQuan>Bình Định</QueQuan>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122131</MaNV>
+    <HoTen>Lê Ngọc Anh</HoTen>
+    <BoPhan>Nhân sự</BoPhan>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>2000-11-08</NgaySinh>
+    <NgheNghiep>Chuyên viên tuyển dụng</NgheNghiep>
+    <QueQuan>Hà Nội</QueQuan>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122132</MaNV>
+    <HoTen>Phạm Đức Huy</HoTen>
+    <BoPhan>Kỹ thuật</BoPhan>
+    <GioiTinh>Nam</GioiTinh>
+    <NgaySinh>1997-07-29</NgaySinh>
+    <NgheNghiep>Kỹ sư điện</NgheNghiep>
+    <QueQuan>Gia Lai</QueQuan>
+  </NhanVien>
+  <NhanVien>
+    <MaNV>NV2415053122133</MaNV>
+    <HoTen>Võ Thanh Thảo</HoTen>
+    <BoPhan>Tiếp thị</BoPhan>
+    <GioiTinh>Nữ</GioiTinh>
+    <NgaySinh>2001-02-14</NgaySinh>
+    <NgheNghiep>Chuyên viên tiếp thị</NgheNghiep>
+    <QueQuan>Cần Thơ</QueQuan>
+  </NhanVien>
+</DanhSachNhanVien>
