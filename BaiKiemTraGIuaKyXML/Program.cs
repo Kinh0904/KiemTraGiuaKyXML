@@ -150,6 +150,15 @@ try
     Console.WriteLine("\nCÂU 9 - SỐ LƯỢNG NHÂN VIÊN THEO BỘ PHẬN");
     foreach (var nhom in thongKeBoPhan)
         Console.WriteLine($"{nhom.BoPhan}: {nhom.SoLuong} nhân viên");
+
+    // Câu 10: Tìm nhân viên có sinh nhật trong tháng hiện tại.
+    var sinhNhatTrongThang = danhSachThongTin
+        .Where(nv => nv.NgaySinh.Month == homNay.Month).ToList();
+    Console.WriteLine($"\nCÂU 10 - NHÂN VIÊN CÓ SINH NHẬT TRONG THÁNG {homNay.Month}");
+    if (sinhNhatTrongThang.Count == 0)
+        Console.WriteLine("Không có nhân viên có sinh nhật trong tháng này.");
+    foreach (var nv in sinhNhatTrongThang)
+        Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | Ngày sinh: {nv.NgaySinh:dd/MM/yyyy}");
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
