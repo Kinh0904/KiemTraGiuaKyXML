@@ -54,19 +54,24 @@ try
 
     // Câu 3: Dùng LINQ tìm nhân viên từ đủ 20 tuổi đến hết 35 tuổi.
     DateTime homNay = DateTime.Today;
-    var danhSachTheoTuoi = (from nhanVien in danhSachNhanVien
+    // Tính tuổi một lần để dùng chung cho các truy vấn.
+    var danhSachThongTin = (from nhanVien in danhSachNhanVien
                            let ngaySinh = (DateTime)nhanVien.Element("NgaySinh")!
                            let tuoi = homNay.Year - ngaySinh.Year
                                - (ngaySinh.Date.AddYears(homNay.Year - ngaySinh.Year) > homNay ? 1 : 0)
-                           where tuoi >= 20 && tuoi <= 35
                            select new
                            {
                                MaNV = nhanVien.Element("MaNV")?.Value,
                                HoTen = nhanVien.Element("HoTen")?.Value,
                                BoPhan = nhanVien.Element("BoPhan")?.Value,
+                               GioiTinh = nhanVien.Element("GioiTinh")?.Value,
+                               NgheNghiep = nhanVien.Element("NgheNghiep")?.Value,
+                               QueQuan = nhanVien.Element("QueQuan")?.Value,
                                NgaySinh = ngaySinh,
                                Tuoi = tuoi
                            }).ToList();
+    var danhSachTheoTuoi = danhSachThongTin
+        .Where(nhanVien => nhanVien.Tuoi >= 20 && nhanVien.Tuoi <= 35).ToList();
 
     Console.WriteLine("\nCÂU 3 - DANH SÁCH NHÂN VIÊN TỪ 20 ĐẾN 35 TUỔI");
     Console.WriteLine($"Số nhân viên phù hợp: {danhSachTheoTuoi.Count}");
@@ -84,6 +89,15 @@ try
         Console.WriteLine($"Ngày sinh:    {nhanVien.NgaySinh:dd/MM/yyyy}");
         Console.WriteLine($"Tuổi:         {nhanVien.Tuoi}");
     }
+    // Câu 4: Kết hợp các điều kiện bằng toán tử &&.
+    var danhSachNhieuDieuKien = danhSachThongTin.Where(nv =>
+        nv.Tuoi >= 25 && nv.GioiTinh == "Nam" && nv.BoPhan == "Công nghệ thông tin").ToList();
+
+    Console.WriteLine("\nCÂU 4 - NAM TỪ 25 TUỔI THUỘC BỘ PHẬN CÔNG NGHỆ THÔNG TIN");
+    if (danhSachNhieuDieuKien.Count == 0)
+        Console.WriteLine("Không có nhân viên thỏa mãn điều kiện.");
+    foreach (var nv in danhSachNhieuDieuKien)
+        Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.BoPhan} | {nv.GioiTinh} | {nv.Tuoi} tuổi");
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
