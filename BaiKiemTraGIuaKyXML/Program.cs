@@ -116,6 +116,25 @@ try
         foreach (var nv in nhanVienCaoTuoiNhat)
             Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.NgheNghiep} | {nv.Tuoi} tuổi");
     }
+
+    // Câu 7: Tuổi trung bình của từng nhóm giới tính.
+    var thongKeGioiTinh = danhSachThongTin
+        .Where(nv => nv.GioiTinh == "Nam" || nv.GioiTinh == "Nữ")
+        .GroupBy(nv => nv.GioiTinh)
+        .Select(nhom => new
+        {
+            GioiTinh = nhom.Key,
+            TuoiTrungBinh = nhom.Average(nv => nv.Tuoi)
+        }).ToList();
+
+    Console.WriteLine("\nCÂU 7 - TUỔI TRUNG BÌNH CỦA NAM VÀ NỮ");
+    foreach (string gioiTinh in new[] { "Nam", "Nữ" })
+    {
+        var nhom = thongKeGioiTinh.FirstOrDefault(n => n.GioiTinh == gioiTinh);
+        Console.WriteLine(nhom == null
+            ? $"{gioiTinh}: Không có nhân viên."
+            : $"{gioiTinh}: {nhom.TuoiTrungBinh:F2} tuổi");
+    }
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
