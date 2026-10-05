@@ -33,6 +33,24 @@ try
         Console.WriteLine($"Nghề nghiệp:  {nhanVien.Element("NgheNghiep")?.Value}");
         Console.WriteLine($"Quê quán:     {nhanVien.Element("QueQuan")?.Value}");
     }
+
+    // Câu 2: Dùng LINQ lấy mã nhân viên, họ tên và bộ phận.
+    var danhSachRutGon = from nhanVien in danhSachNhanVien
+                        select new
+                        {
+                            MaNV = nhanVien.Element("MaNV")?.Value,
+                            HoTen = nhanVien.Element("HoTen")?.Value,
+                            BoPhan = nhanVien.Element("BoPhan")?.Value
+                        };
+
+    Console.WriteLine("\nCÂU 2 - DANH SÁCH MÃ NHÂN VIÊN, HỌ TÊN VÀ BỘ PHẬN");
+    foreach (var nhanVien in danhSachRutGon)
+    {
+        Console.WriteLine(new string('-', 50));
+        Console.WriteLine($"Mã nhân viên: {nhanVien.MaNV}");
+        Console.WriteLine($"Họ tên:       {nhanVien.HoTen}");
+        Console.WriteLine($"Bộ phận:      {nhanVien.BoPhan}");
+    }
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
