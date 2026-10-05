@@ -143,6 +143,13 @@ try
         && thongKeGioiTinh.Any(nhom => nhom.GioiTinh == nv.GioiTinh && nhom.TuoiTrungBinh >= 20));
     Console.WriteLine("\nCÂU 8 - ĐẾM NHÂN VIÊN CÒN LÀM VIỆC THUỘC NHÓM GIỚI TÍNH CÓ TUỔI TRUNG BÌNH >= 20");
     Console.WriteLine($"Số nhân viên: {soNhanVienConLamViec}");
+
+    // Câu 9: Đếm số nhân viên theo từng bộ phận.
+    var thongKeBoPhan = danhSachThongTin.GroupBy(nv => nv.BoPhan)
+        .Select(nhom => new { BoPhan = nhom.Key, SoLuong = nhom.Count() });
+    Console.WriteLine("\nCÂU 9 - SỐ LƯỢNG NHÂN VIÊN THEO BỘ PHẬN");
+    foreach (var nhom in thongKeBoPhan)
+        Console.WriteLine($"{nhom.BoPhan}: {nhom.SoLuong} nhân viên");
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
