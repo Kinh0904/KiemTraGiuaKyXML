@@ -1,0 +1,16 @@
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\Data.xml
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\BaiKiemTraGIuaKyXML.exe
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\BaiKiemTraGIuaKyXML.deps.json
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\BaiKiemTraGIuaKyXML.runtimeconfig.json
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\BaiKiemTraGIuaKyXML.dll
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\bin\Debug\net10.0\BaiKiemTraGIuaKyXML.pdb
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.GeneratedMSBuildEditorConfig.editorconfig
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.AssemblyInfoInputs.cache
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.AssemblyInfo.cs
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.csproj.CoreCompileInputs.cache
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.sourcelink.json
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.dll
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\refint\BaiKiemTraGIuaKyXML.dll
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.pdb
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.genruntimeconfig.cache
+D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\ref\BaiKiemTraGIuaKyXML.dll
