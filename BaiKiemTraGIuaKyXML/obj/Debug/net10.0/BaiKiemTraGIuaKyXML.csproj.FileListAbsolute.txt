@@ -14,4 +14,3 @@ D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\refint\BaiKi
 D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.pdb
 D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemTraGIuaKyXML.genruntimeconfig.cache
 D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\ref\BaiKiemTraGIuaKyXML.dll
-D:\UniVS\Git\KiemTraGiuaKyXML\BaiKiemTraGIuaKyXML\obj\Debug\net10.0\BaiKiemT.2D80234B.Up2Date
