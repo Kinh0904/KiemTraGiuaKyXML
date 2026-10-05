@@ -8,6 +8,7 @@
     <NgaySinh>2004-05-12</NgaySinh>
     <NgheNghiep>Lập trình viên</NgheNghiep>
     <QueQuan>Đắk Lắk</QueQuan>
+    <ConLamViec>true</ConLamViec>
   </NhanVien>
   <NhanVien>
     <MaNV>NV2415053122129</MaNV>
@@ -17,6 +18,7 @@
     <NgaySinh>1998-09-23</NgaySinh>
     <NgheNghiep>Kế toán viên</NgheNghiep>
     <QueQuan>Đà Nẵng</QueQuan>
+    <ConLamViec>true</ConLamViec>
   </NhanVien>
   <NhanVien>
     <MaNV>NV2415053122130</MaNV>
@@ -26,6 +28,7 @@
     <NgaySinh>1996-03-17</NgaySinh>
     <NgheNghiep>Nhân viên kinh doanh</NgheNghiep>
     <QueQuan>Bình Định</QueQuan>
+    <ConLamViec>false</ConLamViec>
   </NhanVien>
   <NhanVien>
     <MaNV>NV2415053122131</MaNV>
@@ -35,6 +38,7 @@
     <NgaySinh>2000-11-08</NgaySinh>
     <NgheNghiep>Chuyên viên tuyển dụng</NgheNghiep>
     <QueQuan>Hà Nội</QueQuan>
+    <ConLamViec>true</ConLamViec>
   </NhanVien>
   <NhanVien>
     <MaNV>NV2415053122132</MaNV>
@@ -44,6 +48,7 @@
     <NgaySinh>1997-07-29</NgaySinh>
     <NgheNghiep>Kỹ sư điện</NgheNghiep>
     <QueQuan>Gia Lai</QueQuan>
+    <ConLamViec>true</ConLamViec>
   </NhanVien>
   <NhanVien>
     <MaNV>NV2415053122133</MaNV>
@@ -53,5 +58,6 @@
     <NgaySinh>2001-02-14</NgaySinh>
     <NgheNghiep>Chuyên viên tiếp thị</NgheNghiep>
     <QueQuan>Cần Thơ</QueQuan>
+    <ConLamViec>false</ConLamViec>
   </NhanVien>
 </DanhSachNhanVien>

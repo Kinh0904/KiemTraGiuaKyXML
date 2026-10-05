@@ -67,6 +67,7 @@ try
                                GioiTinh = nhanVien.Element("GioiTinh")?.Value,
                                NgheNghiep = nhanVien.Element("NgheNghiep")?.Value,
                                QueQuan = nhanVien.Element("QueQuan")?.Value,
+                               ConLamViec = (bool?)nhanVien.Element("ConLamViec") == true,
                                NgaySinh = ngaySinh,
                                Tuoi = tuoi
                            }).ToList();
@@ -135,6 +136,13 @@ try
             ? $"{gioiTinh}: Không có nhân viên."
             : $"{gioiTinh}: {nhom.TuoiTrungBinh:F2} tuổi");
     }
+
+    // Câu 8: Tuổi trung bình tính trên toàn bộ nhóm giới tính (kể cả người đã nghỉ).
+    // Sau đó đếm người còn làm việc thuộc các nhóm có tuổi trung bình >= 20.
+    int soNhanVienConLamViec = danhSachThongTin.Count(nv => nv.ConLamViec
+        && thongKeGioiTinh.Any(nhom => nhom.GioiTinh == nv.GioiTinh && nhom.TuoiTrungBinh >= 20));
+    Console.WriteLine("\nCÂU 8 - ĐẾM NHÂN VIÊN CÒN LÀM VIỆC THUỘC NHÓM GIỚI TÍNH CÓ TUỔI TRUNG BÌNH >= 20");
+    Console.WriteLine($"Số nhân viên: {soNhanVienConLamViec}");
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
