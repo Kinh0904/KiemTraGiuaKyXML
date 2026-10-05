@@ -98,6 +98,12 @@ try
         Console.WriteLine("Không có nhân viên thỏa mãn điều kiện.");
     foreach (var nv in danhSachNhieuDieuKien)
         Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.BoPhan} | {nv.GioiTinh} | {nv.Tuoi} tuổi");
+
+    // Câu 5: Sắp xếp tuổi giảm dần.
+    var danhSachSapXep = danhSachThongTin.OrderByDescending(nv => nv.Tuoi);
+    Console.WriteLine("\nCÂU 5 - NHÂN VIÊN THEO TUỔI GIẢM DẦN");
+    foreach (var nv in danhSachSapXep)
+        Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.BoPhan} | {nv.Tuoi} tuổi");
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
