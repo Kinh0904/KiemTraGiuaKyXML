@@ -104,6 +104,18 @@ try
     Console.WriteLine("\nCÂU 5 - NHÂN VIÊN THEO TUỔI GIẢM DẦN");
     foreach (var nv in danhSachSapXep)
         Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.BoPhan} | {nv.Tuoi} tuổi");
+
+    // Câu 6: Hiển thị tất cả nhân viên đồng tuổi cao nhất, nếu có.
+    Console.WriteLine("\nCÂU 6 - NHÂN VIÊN CÓ TUỔI CAO NHẤT");
+    if (danhSachThongTin.Count == 0)
+        Console.WriteLine("Danh sách nhân viên trống.");
+    else
+    {
+        int tuoiCaoNhat = danhSachThongTin.Max(nv => nv.Tuoi);
+        var nhanVienCaoTuoiNhat = danhSachThongTin.Where(nv => nv.Tuoi == tuoiCaoNhat);
+        foreach (var nv in nhanVienCaoTuoiNhat)
+            Console.WriteLine($"{nv.MaNV} | {nv.HoTen} | {nv.NgheNghiep} | {nv.Tuoi} tuổi");
+    }
 }
 catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or XmlException)
 {
